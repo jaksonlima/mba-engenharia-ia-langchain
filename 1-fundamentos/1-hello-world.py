@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-model = ChatOpenAI(model="gpt-5-nano", temperature=0.1)
+model = ChatOpenAI(model="gpt-5-nano", temperature=0.5)
 message = model.invoke("Hello, world!")
 
 print(message.content)
